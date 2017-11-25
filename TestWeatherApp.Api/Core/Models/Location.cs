@@ -1,4 +1,4 @@
-﻿namespace TestWeatherApp.Api.Models
+﻿namespace TestWeatherApp.Api.Core.Models
 {
     public class Location
     {

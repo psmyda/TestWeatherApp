@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Linq;
 using System.Net.Http;
 using Xunit;
 
@@ -23,6 +25,17 @@ namespace TestWeatherApp.Test
             Console.WriteLine(result);
 
             Assert.NotEmpty(result);
+        }
+
+        [Fact]
+        public void country_code_convertion()
+        {
+            CultureInfo[] cultures = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
+            CultureInfo result = cultures.FirstOrDefault(culture => new RegionInfo(culture.LCID).EnglishName == "Poland");
+
+            Assert.NotNull(result);
+
+            Assert.Equal("pl", result.TwoLetterISOLanguageName);
         }
     }
 }
