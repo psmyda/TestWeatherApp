@@ -1,11 +1,14 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Cors;
 using TestWeatherApp.Api.Core.Repositories;
 
 namespace TestWeatherApp.Api.Controllers.api
 {
+    [EnableCors("http://localhost:4200", "*", "*")]
     public class WeatherController : ApiController
     {
         private readonly IWeatherService _weatherService;
+
 
         public WeatherController(IWeatherService weatherService)
         {

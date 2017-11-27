@@ -11,6 +11,8 @@ namespace TestWeatherApp.Api
         {
             // Web API configuration and services
 
+            config.EnableCors();
+
             var serializerSettings = config.Formatters.JsonFormatter.SerializerSettings;
             serializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
             serializerSettings.Formatting = Formatting.Indented;
