@@ -33,3 +33,7 @@
     </mat-card-actions>
   </mat-card>
 </div>
+
+<div *ngIf="err != null && weather == null && !loading" class="alert alert-error" >
+    {{err.message}}, Please try again.
+</div>

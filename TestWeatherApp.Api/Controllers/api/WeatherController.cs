@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Cors;
-using TestWeatherApp.Api.Core.Repositories;
+using TestWeatherApp.Api.Services;
 
 namespace TestWeatherApp.Api.Controllers.api
 {
@@ -22,7 +22,7 @@ namespace TestWeatherApp.Api.Controllers.api
             var result = _weatherService.GetWeather(country, city);
 
             if (result == null)
-                return BadRequest("You provided wrong country name");
+                return BadRequest("You provided wrong country or city name");
 
             return Ok(result);
         }

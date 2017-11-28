@@ -1,6 +1,6 @@
-﻿using TestWeatherApp.Api.Core.Models;
+﻿using TestWeatherApp.Api.Models;
 
-namespace TestWeatherApp.Api.Core.Repositories
+namespace TestWeatherApp.Api.Services
 {
     public interface IWeatherService
     {

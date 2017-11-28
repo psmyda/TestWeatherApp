@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeatherApp.Api", "TestW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeatherApp.Test", "TestWeatherApp.Test\TestWeatherApp.Test.csproj", "{01DDA1B1-2940-4B0D-BF12-26570E6D1A7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeatherApp.TestIntegration", "TestWeatherApp.TestIntegration\TestWeatherApp.TestIntegration.csproj", "{83BB3B33-FFA5-4CCD-B707-982D166C43AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeatherApp.Spec", "TestWeatherApp.Spec\TestWeatherApp.Spec.csproj", "{A16462CB-5840-43FB-9A48-FD7332E64360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{01DDA1B1-2940-4B0D-BF12-26570E6D1A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01DDA1B1-2940-4B0D-BF12-26570E6D1A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01DDA1B1-2940-4B0D-BF12-26570E6D1A7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83BB3B33-FFA5-4CCD-B707-982D166C43AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83BB3B33-FFA5-4CCD-B707-982D166C43AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83BB3B33-FFA5-4CCD-B707-982D166C43AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83BB3B33-FFA5-4CCD-B707-982D166C43AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16462CB-5840-43FB-9A48-FD7332E64360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16462CB-5840-43FB-9A48-FD7332E64360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16462CB-5840-43FB-9A48-FD7332E64360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16462CB-5840-43FB-9A48-FD7332E64360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

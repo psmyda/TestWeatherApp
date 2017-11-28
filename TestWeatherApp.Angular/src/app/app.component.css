@@ -29,3 +29,23 @@
     font-size: 36px;
     font-weight: 700;
   }
+
+  .alert {
+    padding: 20px 35px 20px 35px;
+    margin-bottom: 18px;
+    color: #c09853;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 20px;
+    }
+
+    .alert-error {
+      color: #fff;
+      background-color: #ac6060;
+      border-color: #e4c4c9;
+      }
+

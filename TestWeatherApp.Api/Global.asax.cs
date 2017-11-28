@@ -5,7 +5,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using TestWeatherApp.Api.Core.Repositories;
+using TestWeatherApp.Api.Services;
 
 namespace TestWeatherApp.Api
 {
@@ -30,7 +30,6 @@ namespace TestWeatherApp.Api
 
             builder.RegisterType<WeatherService>().As<IWeatherService>();
 
-            builder.RegisterType<WeatherRepository>().As<IWeatherRepository>();
             var container = builder.Build();
 
             var config = GlobalConfiguration.Configuration;

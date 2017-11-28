@@ -10,9 +10,12 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class AppComponent {
   weather;
+  err;
   loading: boolean;
   country = new FormControl('', [Validators.required]);
   city = new FormControl('', [Validators.required]);
+  
+
 
   constructor(private _service: WeatherService){  }
 
@@ -24,6 +27,10 @@ export class AppComponent {
         this.loading = false;    
         this.weather = result.json();
       }
+    }, 
+    err => {
+      this.loading = false;
+      this.err = err.json();
     })
   }
 }
